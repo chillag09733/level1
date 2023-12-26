@@ -1,0 +1,113 @@
+@import url(variables.css);
+@import url(buttons.css);
+
+@font-face {
+    font-family: Harry;
+    src: url(fonts/HarryP-MVZ6w.ttf);
+}
+@font-face {
+    font-family: Glass;
+    src: url(fonts/GlassAntiqua-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    font-family: Glass;
+  }
+  body {
+    padding: 2rem 0 2rem 0;
+    height: fit-content;
+    width: 1000px;
+    display: block;
+    margin-inline: auto;
+  }
+.logo {
+    font-family: Harry;
+    font-size: 50px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    align-items: center;
+  }
+  header nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    justify-content: center;
+  }
+  header nav .menu-item {
+    padding: 1rem;
+  }
+  .menu-item a {
+    text-decoration: none;
+    text-align: center;
+  }
+  .menu-item a:hover{
+    text-decoration: underline;
+  }
+  
+  header .link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .title h1,
+  h3 {
+    text-align: center;
+  }
+.img-box {
+    width: 260px;
+    height: 320px;
+    background: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin-inline: auto;
+    display: block;
+  }
+  .img-box h1 {
+    color: var(--background);
+    font-family: Glass;
+    text-align: left;
+    padding-top: 290px;
+    padding-left: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .harry {
+    background-image: url(pics/Harry_Potter_character_poster.jpg);
+  }
+  .hermione{
+    background-image: url(pics/Hermione_Granger_poster.jpg);
+  }
+  .ron{
+    background-image: url(pics/Ron_Weasley_poster.jpg);
+  }
+  main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 2rem 0 1rem;
+  }
+  section img {
+    width: 500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-inline: auto;
+    display: block;
+  }
+  section h2,
+  p {
+    text-align: justify;
+  }
